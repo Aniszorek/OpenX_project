@@ -32,18 +32,18 @@ public class BinaryTree {
         return areNodesEqual(node1.getLeft(), node2.getLeft()) && areNodesEqual(node1.getRight(), node2.getRight());
     }
 
-    private Node findNode(Node node, int value) {
+    private Node findNode(Node node, int id) {
         if (node == null) {
             return null;
         }
-        if (node.getValue() == value) {
+        if (node.getId() == id) {
             return node;
         }
-        Node left = findNode(node.getLeft(), value);
+        Node left = findNode(node.getLeft(), id);
         if (left != null) {
             return left;
         }
-        return findNode(node.getRight(), value);
+        return findNode(node.getRight(), id);
     }
 
 
@@ -63,25 +63,25 @@ public class BinaryTree {
         return areNodesEqual(root, other.root);
     }
 
-    public void addLeftChild(int parentValue, int value) {
-        Node parent = findNode(root, parentValue);
+    public void addLeftChild(int parentId, int value, int id) {
+        Node parent = findNode(root, parentId);
         if (parent == null) {
             throw new IllegalArgumentException("Parent node not found");
         }
         if (parent.getLeft() != null) {
             throw new IllegalArgumentException("Parent already has left child");
         }
-        parent.setLeft(new Node(value));
+        parent.setLeft(new Node(value, id));
     }
 
-    public void addRightChild(int parentValue, int value) {
-        Node parent = findNode(root, parentValue);
+    public void addRightChild(int parentId, int value, int id) {
+        Node parent = findNode(root, parentId);
         if (parent == null) {
             throw new IllegalArgumentException("Parent node not found");
         }
         if (parent.getRight() != null) {
             throw new IllegalArgumentException("Parent already has right child");
         }
-        parent.setRight(new Node(value));
+        parent.setRight(new Node(value, id));
     }
 }
