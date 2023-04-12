@@ -2,11 +2,11 @@
 
 This is a Java project that implements a binary tree and includes a JUnit test class for verifying the functionality of the binary tree. The project has three source files:
 
-BinaryTree.java - This file contains the BinaryTree class. The BinaryTree class represents the binary tree and has a reference to the root node. The class includes methods to count the number of leafs (nodes without child) in the tree, find the length of the longest path from the root node to a leaf node, and compare the tree with another tree for equality.
+BinaryTree.java - file contains the BinaryTree class. The BinaryTree class represents the binary tree and has a reference to the root node. The class includes methods to count the number of leafs (nodes without child) in the tree, find the length of the longest path from the root node to a leaf node, and compare the tree with another tree for equality.
 
-Node.java - This file contains the Node class. The Node class represents a node in the binary tree, has an integer value and integer ID, as well as references to its left and right child nodes.
+Node.java - file contains the Node class. The Node class represents a node in the binary tree, has an integer value and integer ID, as well as references to its left and right child nodes.
 
-BinaryTreeTest.java - This file contains a test class BinaryTreeTest that uses JUnit to test the functionality of the BinaryTree class. The test class includes three test methods to verify that:
+BinaryTreeTest.java - file contains a test class BinaryTreeTest that uses JUnit to test the functionality of the BinaryTree class. The test class includes three test methods to verify that:
 
 + Binary tree is constructed correctly with one leaf node and a path length of zero.
 + Id is assigned correctly to nodes
