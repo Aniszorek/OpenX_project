@@ -6,11 +6,11 @@ public class BinaryTreeTest {
         Node root = new Node(5);
         BinaryTree tree = new BinaryTree(root);
         assertEquals(1, tree.countLeafNodes());
-        assertEquals(0, tree.largestPath());
+        assertEquals(0, tree.maxPath());
     }
 
     @Test
-    public void testCountLeaves() {
+    public void testCountLeafNodes() {
         Node root = new Node(5);
 
         root.left = new Node(3);
@@ -44,7 +44,7 @@ public class BinaryTreeTest {
 
         BinaryTree tree = new BinaryTree(root);
 
-        assertEquals(4, tree.largestPath());
+        assertEquals(4, tree.maxPath());
     }
 
     @Test
