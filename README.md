@@ -10,6 +10,7 @@ BinaryTreeTest.java - This file contains a test class BinaryTreeTest that uses J
 + Counting leaf nodes in the binary tree works correctly.
 + Finding the length of the longest path from the root node to a leaf node works correctly.
 + Comparing two binary trees for equality works correctly.
++ dudu
 
 # Requirements
 Java (JDK 17)
