@@ -1,11 +1,12 @@
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class BinaryTreeTest {
     @Test
     public void testBinaryTreeConstruction() {
-        Node root = new Node(5, 1);
+        Node root = new Node(5, 0);
         BinaryTree tree = new BinaryTree(root);
         assertEquals(1, tree.getNumOfLeaf());
         assertEquals(0, tree.getMaxPath());
@@ -47,7 +48,7 @@ public class BinaryTreeTest {
     }
 
     @Test
-    public void testEquals() {
+    public void testIsEqual() {
         Node root1 = new Node(5, 0);
         BinaryTree tree1 = new BinaryTree(root1);
         tree1.addLeftChild(0, 3);
@@ -73,6 +74,20 @@ public class BinaryTreeTest {
         tree2.addRightChild(8, 5);
 
         assertTrue(tree1.isEqual(tree2));
+    }
+
+    @Test
+    public void testNodeIdValidation() {
+        Node root = new Node(5, 0);
+        BinaryTree tree = new BinaryTree(root);
+
+        tree.addLeftChild(0, 3);
+        tree.addRightChild(0, 7);
+        tree.addLeftChild(1, 2);
+
+        assertEquals(1, root.getLeft().getId());
+        assertEquals(2, root.getRight().getId());
+        assertEquals(3, root.getLeft().getLeft().getId());
     }
 
 }

@@ -71,7 +71,7 @@ public class BinaryTree {
             throw new IllegalArgumentException("Parent already has left child");
         }
         parent.setLeft(new Node(value, nodeId));
-        nodeId++;
+        this.nodeId++;
     }
 
     public void addRightChild(int parentId, int value) {
@@ -83,6 +83,6 @@ public class BinaryTree {
             throw new IllegalArgumentException("Parent already has right child");
         }
         parent.setRight(new Node(value, nodeId));
-        nodeId++;
+        this.nodeId++;
     }
 }
