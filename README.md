@@ -6,10 +6,10 @@ BinaryTree.java - This file contains the Node class and BinaryTree class. The No
 
 BinaryTreeTest.java - This file contains a test class BinaryTreeTest that uses JUnit to test the functionality of the BinaryTree class. The test class includes three test methods to verify that:
 
-Binary tree is constructed correctly with one leaf node and a path length of zero.
-Counting leaf nodes in the binary tree works correctly.
-Finding the length of the longest path from the root node to a leaf node works correctly.
-Comparing two binary trees for equality works correctly.
++ Binary tree is constructed correctly with one leaf node and a path length of zero.
++ Counting leaf nodes in the binary tree works correctly.
++ Finding the length of the longest path from the root node to a leaf node works correctly.
++ Comparing two binary trees for equality works correctly.
 
 # Requirements
 Java (JDK 17)
